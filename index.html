@@ -16,56 +16,67 @@
 <body>
     <!-- Sidebar -->
     <aside class="sidebar">
-        <div class="toggle-btn" id="toggle-btn" aria-label="Toggle Navigation">
-            <i class="fas fa-bars"></i>
-        </div>
-        <nav class="nav">
-            <a href="#home">
-                <i class="fas fa-home"></i>
-                <span class="nav-text">Home</span>
-            </a>
-            <a href="#about">
-                <i class="fas fa-user"></i>
-                <span class="nav-text">About</span>
-            </a>
-            <a href="#experience">
-                <i class="fas fa-briefcase"></i>
-                <span class="nav-text">Experience</span>
-            </a>
-            <a href="#education">
-                <i class="fas fa-graduation-cap"></i>
-                <span class="nav-text">Education</span>
-            </a>
-            <a href="#skills">
-                <i class="fas fa-tools"></i>
-                <span class="nav-text">Skills</span>
-            </a>
-            <a href="#projects">
-                <i class="fas fa-project-diagram"></i>
-                <span class="nav-text">Projects</span>
-            </a>
-            <a href="#leadership">
-                <i class="fas fa-users"></i>
-                <span class="nav-text">Leadership</span>
-            </a>
-            <a href="#honors">
-                <i class="fas fa-award"></i>
-                <span class="nav-text">Honors</span>
-            </a>
-            <a href="#contact">
-                <i class="fas fa-envelope"></i>
-                <span class="nav-text">Contact</span>
-            </a>
-        </nav>
-    </aside>
+    <div class="toggle-btn" id="toggle-btn" aria-label="Toggle Navigation">
+        <i class="fas fa-bars"></i>
+    </div>
+    <nav class="nav">
+        <a href="#home">
+            <i class="fas fa-home"></i>
+            <span class="nav-text">Home</span>
+        </a>
+        <a href="#about">
+            <i class="fas fa-user"></i>
+            <span class="nav-text">About</span>
+        </a>
+        <a href="#experience">
+            <i class="fas fa-briefcase"></i>
+            <span class="nav-text">Experience</span>
+        </a>
+        <a href="#education">
+            <i class="fas fa-graduation-cap"></i>
+            <span class="nav-text">Education</span>
+        </a>
+        <a href="#skills">
+            <i class="fas fa-tools"></i>
+            <span class="nav-text">Skills</span>
+        </a>
+        <a href="#projects">
+            <i class="fas fa-project-diagram"></i>
+            <span class="nav-text">Projects</span>
+        </a>
+        <a href="#leadership">
+            <i class="fas fa-users"></i>
+            <span class="nav-text">Leadership</span>
+        </a>
+        <a href="#honors">
+            <i class="fas fa-award"></i>
+            <span class="nav-text">Honors</span>
+        </a>
+        <a href="#contact">
+            <i class="fas fa-envelope"></i>
+            <span class="nav-text">Contact</span>
+        </a>
+    </nav>
+</aside>
+
 
     <!-- Main Content Container -->
     <div class="content-container">
         <main class="main-content">
             <!-- Home Section -->
-            <section id="home" class="home-section collapsible-section">
-                <h1>Welcome to Adriel Vijuan's Resume</h1>
-                <p>I'm Adriel, pursuing a B.S. in Electrical Engineering and Computer Science at the University of California, Berkeley. Passionate about computer vision, artificial intelligence, and data science, I strive to develop innovative solutions that make a meaningful impact.</p>
+            <section id="home" class="home-section hero">
+                <div class="hero-content">
+                    <h1>Hi, I'm Adriel</h1>
+                    <p>
+                        I'm an Electrical Engineering and Computer Science student at UC Berkeley.
+                        Passionate about <strong>AI</strong>, <strong>Computer Vision</strong>, and <strong>Technology</strong>.
+                    </p>
+                    <div class="links">
+                        <a href="https://github.com/aviju888" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://linkedin.com/in/adriel-vijuan" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <!-- Add more links if necessary -->
+                    </div>
+                </div>
             </section>
 
             <!-- About Section -->
@@ -74,9 +85,35 @@
                 <p>Hello! I'm Adriel Vijuan, a dedicated Electrical Engineering and Computer Science (EECS) student at UC Berkeley. My academic journey has equipped me with a strong foundation in computer vision, artificial intelligence, data structures, and machine learning. I thrive on tackling challenging problems, collaborating with diverse teams, and continuously learning new technologies to drive impactful projects.</p>
             </section>
 
+            <!-- Education Section -->
+            <section id="education" class="education-section collapsible-section">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>B.S. Electrical Engineering & Computer Sciences (EECS)</h3>
+                    <h4>University of California, Berkeley</h4>
+                    <span>Graduation: May 2025</span>
+                    <ul>
+                        <li>Relevant Coursework:
+                            <ul>
+                                <li>CS 180: Computer Vision and Computational Photography</li>
+                                <li>CS 188: Artificial Intelligence (Python)</li>
+                                <li>DATA 100: Principles & Techniques of Data Science</li>
+                                <li>CS 161: Computer Security</li>
+                                <li>CS 186: Databases</li>
+                                <li>CS 61B: Data Structures (Java)</li>
+                                <li>CS 70: Discrete Math and Probability</li>
+                                <li>PH 142: Probability and Statistics in Biology and Public Health</li>
+                                <li>CS 195: Social Implications of Computer Technology</li>
+                                <li>EECS 16A/16B: Designing Information Devices and Systems I & II (C++)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
             <!-- Experience Section -->
             <section id="experience" class="experience-section collapsible-section">
-                <h2>Experience</h2>
+                <h2>Work Experience</h2>
                 <!-- Dowork.ai -->
                 <div class="job">
                     <h3>Machine Learning Engineer Intern</h3>
@@ -90,7 +127,7 @@
                 </div>
                 <!-- Lawrence Berkeley National Laboratory - Research Assistant Intern -->
                 <div class="job">
-                    <h3>Research Assistant Intern</h3>
+                    <h3>Research Assistant Intern (EinR)</h3>
                     <h4>Lawrence Berkeley National Laboratory, Berkeley, CA</h4>
                     <span>June 2021 – August 2021</span>
                     <ul>
@@ -106,29 +143,6 @@
                     <ul>
                         <li>Investigated the correlation between air quality (AQI levels) and asthma rates among different age groups in California, focusing specifically on children aged 0-17.</li>
                         <li>Utilized linear regression analysis to identify a significant positive correlation between high AQI levels and increased asthma rates in children.</li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Education Section -->
-            <section id="education" class="education-section collapsible-section">
-                <h2>Education</h2>
-                <div class="education-item">
-                    <h3>Bachelor of Science in Electrical Engineering and Computer Science (EECS)</h3>
-                    <h4>University of California, Berkeley</h4>
-                    <span>May 2025</span>
-                    <ul>
-                        <li>Relevant Coursework:
-                            <ul>
-                                <li>Computer Vision and Computational Photography</li>
-                                <li>Artificial Intelligence (Python)</li>
-                                <li>Data Structures (Java)</li>
-                                <li>Principles & Techniques of Data Science</li>
-                                <li>Computer Security</li>
-                                <li>Discrete Math and Probability</li>
-                                <li>Designing Information Devices and Systems I & II (C++)</li>
-                            </ul>
-                        </li>
                     </ul>
                 </div>
             </section>
@@ -250,27 +264,22 @@
             </section>
 
             <!-- Contact Section -->
-            <section id="contact" class="contact-section collapsible-section">
-                <h2>Contact Me</h2>
-                <p>I'd love to hear from you! Whether you have a question, a project idea, or just want to connect, feel free to reach out.</p>
-                <form action="https://formspree.io/f/yourformid" method="POST">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
+<section id="contact" class="contact-section collapsible-section">
+    <h2>Contact Me</h2>
+    <p>I'd love to hear from you! Whether you have a question, a project idea, or just want to connect, feel free to reach out.</p>
+    
+    <!-- Email Link -->
+    <p>You can reach me at: 
+        <a href="avijuan@berkeley.edu">avijuan@berkeley.edu</a>
+    </p>
+    
+    <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://linkedin.com/in/yourlinkedin" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <!-- Add more social links as needed -->
+    </div>
+</section>
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="_replyto" required>
-
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-
-                    <button type="submit">Send Message</button>
-                </form>
-                <div class="social-links">
-                    <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="https://linkedin.com/in/yourlinkedin" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                    <!-- Add more social links as needed -->
-                </div>
-            </section>
         </main>
 
         <!-- Footer -->
