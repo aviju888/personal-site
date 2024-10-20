@@ -1,64 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Tags for SEO and Responsiveness -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adriel Vijuan - Electrical Engineering and Computer Science</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <!-- Meta Description for SEO -->
     <meta name="description" content="Adriel Vijuan's personal resume website. Electrical Engineering and Computer Science student at UC Berkeley with experience in machine learning, computer vision, and AI projects.">
     <meta name="keywords" content="Adriel Vijuan, Resume, Electrical Engineering, Computer Science, Machine Learning, Computer Vision, AI, UC Berkeley">
     <meta name="author" content="Adriel Vijuan">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Sidebar -->
-    <aside class="sidebar">
-    <div class="toggle-btn" id="toggle-btn" aria-label="Toggle Navigation">
-        <i class="fas fa-bars"></i>
-    </div>
-    <nav class="nav">
-        <a href="#home">
-            <i class="fas fa-home"></i>
-            <span class="nav-text">Home</span>
-        </a>
-        <a href="#about">
-            <i class="fas fa-user"></i>
-            <span class="nav-text">About</span>
-        </a>
-        <a href="#experience">
-            <i class="fas fa-briefcase"></i>
-            <span class="nav-text">Experience</span>
-        </a>
-        <a href="#education">
-            <i class="fas fa-graduation-cap"></i>
-            <span class="nav-text">Education</span>
-        </a>
-        <a href="#skills">
-            <i class="fas fa-tools"></i>
-            <span class="nav-text">Skills</span>
-        </a>
-        <a href="#projects">
-            <i class="fas fa-project-diagram"></i>
-            <span class="nav-text">Projects</span>
-        </a>
-        <a href="#leadership">
-            <i class="fas fa-users"></i>
-            <span class="nav-text">Leadership</span>
-        </a>
-        <a href="#honors">
-            <i class="fas fa-award"></i>
-            <span class="nav-text">Honors</span>
-        </a>
-        <a href="#contact">
-            <i class="fas fa-envelope"></i>
-            <span class="nav-text">Contact</span>
-        </a>
-    </nav>
-</aside>
-
+    <aside class="sidebar expanded">
+        <div class="toggle-btn" id="toggle-btn" aria-label="Toggle Navigation" onclick="toggleSidebar()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <!-- Navigation Links -->
+        <nav class="nav">
+            <a href="#home">
+                <i class="fas fa-home"></i>
+                <span class="nav-text">Home</span>
+            </a>
+            <a href="#about">
+                <i class="fas fa-user"></i>
+                <span class="nav-text">About</span>
+            </a>
+            <a href="#experience">
+                <i class="fas fa-briefcase"></i>
+                <span class="nav-text">Experience</span>
+            </a>
+            <a href="#education">
+                <i class="fas fa-graduation-cap"></i>
+                <span class="nav-text">Education</span>
+            </a>
+            <a href="#skills">
+                <i class="fas fa-tools"></i>
+                <span class="nav-text">Skills</span>
+            </a>
+            <a href="#projects">
+                <i class="fas fa-project-diagram"></i>
+                <span class="nav-text">Projects</span>
+            </a>
+            <a href="#leadership">
+                <i class="fas fa-users"></i>
+                <span class="nav-text">Leadership</span>
+            </a>
+            <a href="#honors">
+                <i class="fas fa-award"></i>
+                <span class="nav-text">Honors</span>
+            </a>
+            <a href="#contact">
+                <i class="fas fa-envelope"></i>
+                <span class="nav-text">Contact</span>
+            </a>
+        </nav>
+    </aside>
 
     <!-- Main Content Container -->
     <div class="content-container">
@@ -80,13 +85,13 @@
             </section>
 
             <!-- About Section -->
-            <section id="about" class="about-section collapsible-section">
+            <section id="about" class="about-section">
                 <h2>About Me</h2>
                 <p>Hello! I'm Adriel Vijuan, a dedicated Electrical Engineering and Computer Science (EECS) student at UC Berkeley. My academic journey has equipped me with a strong foundation in computer vision, artificial intelligence, data structures, and machine learning. I thrive on tackling challenging problems, collaborating with diverse teams, and continuously learning new technologies to drive impactful projects.</p>
             </section>
 
             <!-- Education Section -->
-            <section id="education" class="education-section collapsible-section">
+            <section id="education" class="education-section">
                 <h2>Education</h2>
                 <div class="education-item">
                     <h3>B.S. Electrical Engineering & Computer Sciences (EECS)</h3>
@@ -112,7 +117,7 @@
             </section>
 
             <!-- Experience Section -->
-            <section id="experience" class="experience-section collapsible-section">
+            <section id="experience" class="experience-section">
                 <h2>Work Experience</h2>
                 <!-- Dowork.ai -->
                 <div class="job">
@@ -148,7 +153,7 @@
             </section>
 
             <!-- Skills Section -->
-            <section id="skills" class="skills-section collapsible-section">
+            <section id="skills" class="skills-section">
                 <h2>Skills</h2>
                 <div class="skills-list">
                     <div class="skill-category">
@@ -182,12 +187,12 @@
             </section>
 
             <!-- Projects Section -->
-            <section id="projects" class="projects-section collapsible-section">
+            <section id="projects" class="projects-section">
                 <h2>Projects</h2>
                 <!-- Colorizing Prokudin-Gorskii’s Photo Collection -->
                 <div class="project">
                     <h3>Colorizing Prokudin-Gorskii’s Photo Collection</h3>
-                    <h4>Berkeley Skydeck - CS 180: Computer Vision and Computational Photography, Fall 2024</h4>
+                    <h4>CS 180: Computer Vision and Computational Photography, Fall 2024</h4>
                     <p>Developed an automated system to align and colorize historical grayscale images from the Prokudin-Gorskii collection by combining three color channel images.</p>
                     <ul>
                         <li>Implemented single and multi-scale pyramid alignment techniques to align RGB channels.</li>
@@ -197,7 +202,7 @@
                 <!-- Pacman -->
                 <div class="project">
                     <h3>Pacman</h3>
-                    <h4>Berkeley Skydeck - CS 188: Artificial Intelligence, Spring 2023</h4>
+                    <h4>CS 188: Artificial Intelligence, Spring 2023</h4>
                     <p>Created a series of AI algorithms to enable Pacman to navigate complex environments, make strategic decisions, and learn from interactions.</p>
                     <ul>
                         <li>Implemented Depth-First Search, Breadth-First Search, and A* Search algorithms.</li>
@@ -207,7 +212,7 @@
                 <!-- CS61Classify: Assembly Classify Algorithm -->
                 <div class="project">
                     <h3>CS61Classify: Assembly Classify Algorithm</h3>
-                    <h4>Berkeley, CA - CS 61C: Great Ideas in Computer Architecture, Fall 2022</h4>
+                    <h4>CS 61C: Great Ideas in Computer Architecture, Fall 2022</h4>
                     <p>Implemented a RISC-V assembly system with efficient register usage, function writing, calling conventions, pointer manipulation, and memory allocation on both the stack and heap.</p>
                     <ul>
                         <li>Developed a machine learning algorithm with functions for matrix and vector operations, including matrix multiplication and inner product.</li>
@@ -217,7 +222,7 @@
             </section>
 
             <!-- Leadership Section -->
-            <section id="leadership" class="leadership-section collapsible-section">
+            <section id="leadership" class="leadership-section">
                 <h2>Leadership & Involvement</h2>
                 <!-- AFX Dance -->
                 <div class="leadership-item">
@@ -253,7 +258,7 @@
             </section>
 
             <!-- Honors Section -->
-            <section id="honors" class="honors-section collapsible-section">
+            <section id="honors" class="honors-section">
                 <h2>Honors & Awards</h2>
                 <ul>
                     <li><strong>Ronnie Boatman Commitment to Excellence Scholarship</strong> - Awarded by Boatman Scholarship Committee</li>
@@ -264,22 +269,21 @@
             </section>
 
             <!-- Contact Section -->
-<section id="contact" class="contact-section collapsible-section">
-    <h2>Contact Me</h2>
-    <p>I'd love to hear from you! Whether you have a question, a project idea, or just want to connect, feel free to reach out.</p>
-    
-    <!-- Email Link -->
-    <p>You can reach me at: 
-        <a href="avijuan@berkeley.edu">avijuan@berkeley.edu</a>
-    </p>
-    
-    <div class="social-links">
-        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-        <a href="https://linkedin.com/in/yourlinkedin" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <!-- Add more social links as needed -->
-    </div>
-</section>
-
+            <section id="contact" class="contact-section">
+                <h2>Contact Me</h2>
+                <p>I'd love to hear from you! Whether you have a question, a project idea, or just want to connect, feel free to reach out.</p>
+                
+                <!-- Email Link -->
+                <p>You can reach me at: 
+                    <a href="mailto:avijuan@berkeley.edu">avijuan@berkeley.edu</a>
+                </p>
+                
+                <div class="social-links">
+                    <a href="https://github.com/aviju888" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://linkedin.com/in/adriel-vijuan" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <!-- Add more social links as needed -->
+                </div>
+            </section>
         </main>
 
         <!-- Footer -->
@@ -288,7 +292,7 @@
         </footer>
     </div>
 
-    <!-- Optional JavaScript for Sidebar Toggle and Scroll Interaction -->
+    <!-- JavaScript for Sidebar Toggle and Scroll Interaction -->
     <script src="script.js"></script>
 </body>
 </html>
